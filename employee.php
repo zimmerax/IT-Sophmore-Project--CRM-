@@ -19,6 +19,7 @@
             <input type="search" name="Search" placeholder="Search for a Employee" />
             <input type="submit" value="Search" />
         </form>
+        <a href="EmployeeSearchHelp.php">Help</a
  * can be modified as necessary with id / class tags
  */
 require 'templates/header.html';
@@ -148,7 +149,7 @@ if ((!empty($_GET['EmployeeID']) or $employeeID > 0) and $submitSuccessful) {
         <input type="hidden" name="EmployeeID" value="<?= $employeeID ?>"/>
         <input class="formTag" id="changeActive" type="submit" value=<?= ($active ? print'"Suspend Employee"' : print'"Activate Employee"') ?>/>
     </form>
-
+<a href="EmployeeSearchHelp.php">Help</a>
     <!-- Employee Information -->
     <div class="infoTag displayOff">
         <ul>
