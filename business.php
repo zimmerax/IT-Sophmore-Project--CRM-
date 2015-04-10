@@ -19,6 +19,7 @@
             <input type="search" name="Search" placeholder="Search for a Business" />
             <input type="submit" value="Search" />
         </form>
+        <a href="BusinessSearchHelp.php">?<a>
  * can be modified as necessary with id / class tags
  */
 require 'templates/header.html';
@@ -123,7 +124,7 @@ ini_set('display_errors',1);  error_reporting(E_ALL);
         <input type="hidden" name="CreateBusiness" value="True"/>
         <input id="addBusinessButton" type="submit" value="Add New Business" />
     </form>
-
+<a href="BusinessHelp.php">?<a>
     <?php if ($businessID > 0) { //if we load a business, add create employee button
         print'<form class="infoTag" action="employee.php">
                 <input type="hidden" name="CreateEmployee" value="True"/>
